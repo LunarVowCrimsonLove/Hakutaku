@@ -33,24 +33,6 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: os
-    attributes:
-      label: 操作系统
-      description: 请提供操作系统信息
-      placeholder: 例如 Windows 10, macOS Ventura, iPhone 12, Android 11
-    validations:
-      required: true
-
-  - type: input
-    id: browser
-    attributes:
-      label: 浏览器及版本
-      description: 请提供浏览器及其版本号
-      placeholder: 例如 Chrome 120.0.1, Safari 16.2
-    validations:
-      required: false
-
   - type: textarea
     id: plugins
     attributes:
