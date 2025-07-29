@@ -1,0 +1,119 @@
+---
+name: Custom issue template
+about: Describe this issue template's purpose here.
+title: ''
+labels: ''
+assignees: ''
+
+---
+
+name: 问题报告
+description: 提交问题报告以帮助我们改进
+title: "[BUG] <简要描述问题>"
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 请提供问题的清晰简洁描述。
+      placeholder: 描述您遇到的问题...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: framework
+    attributes:
+      label: 框架类型
+      description: 请选择您使用的框架类型
+      options:
+        - Air
+        - Pro
+        - Custom
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: 使用版本
+      description: 请提供您使用的版本号
+      placeholder: 例如 v1.2.3
+    validations:
+      required: true
+
+  - type: textarea
+    id: plugins
+    attributes:
+      label: 使用插件
+      description: 请列出所有使用的插件及其版本（如果适用）
+      placeholder: 例如 PluginA v1.0, PluginB v2.1
+    validations:
+      required: false
+
+  - type: textarea
+    id: crash
+    attributes:
+      label: 崩溃弹窗
+      description: 是否出现崩溃弹窗？如有，请提供弹窗内容或截图。
+      placeholder: 描述弹窗内容或附上截图...
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 运行日志
+      description: 请附上相关的运行日志（如果有）。
+      placeholder: 粘贴日志内容...
+    validations:
+      required: false
+
+  - type: textarea
+    id: issue-details
+    attributes:
+      label: 遇到的问题
+      description: 请详细描述您遇到的问题。
+      placeholder: 详细描述问题...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 如何复现
+      description: 请提供复现问题的步骤。
+      placeholder: |
+        1. 前往 '...'
+        2. 点击 '....'
+        3. 滚动到 '....'
+        4. 观察错误
+    validations:
+      required: true
+
+  - type: input
+    id: repro-rate
+    attributes:
+      label: 复现概率
+      description: 请描述问题复现的频率
+      placeholder: 例如 100%、偶尔、随机
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 预期行为
+      description: 请描述您期望的正常行为。
+      placeholder: 描述期望的行为...
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 附加信息
+      description: 请提供任何其他相关背景信息或截图。
+      placeholder: 提供额外信息或截图...
+    validations:
+      required: false
